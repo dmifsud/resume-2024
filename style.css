@@ -1,0 +1,376 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    font-family: 'Lato', sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CUSTOM */
+
+body {
+    color: #4a555f;
+    /* padding: 6vw; */
+    line-height: 1.2em;
+    /* font-size: larger; */
+    font-size: 0.8em;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+
+
+p {
+    line-height: 1.4em;
+}
+
+i {
+    font-style: italic;
+}
+
+ul.b-point {
+    list-style: disc;
+}
+
+ul.b-point li {
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+.all-front-project ul.b-point li {
+    margin-left: 2em;
+}
+
+p.contributions {
+    margin-left: 1em;
+}
+
+/* .default-spacing p:not(:last-child), ul.default-spacing li:not(:last-child), .f-default-spacing {
+    margin-bottom: 0.5em;
+} */
+
+.f-default-spacing {
+    margin-bottom: 0.5em;
+}
+
+p.company-description {
+    margin: 2.25em 0;
+}
+
+p.tech-stack {
+    margin: 0 0 1.125em 0;
+}
+
+.company-contributions h6{
+    /* font-weight: bold; */
+    text-decoration: underline;
+    margin-bottom: 1.125em;
+}
+
+strong, b {
+    font-weight:700;
+}
+
+small {
+    /* font-weight: 300; */
+    font-size: 0.7em;
+}
+
+.text-right {
+    text-align: right;
+}
+
+header, section, .column-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.name-title {
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 3em;
+    letter-spacing: 2px;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+
+.position-subtitle {
+    /* letter-spacing: 1px; */
+}
+
+.column {
+    
+}
+
+.box {
+    padding: 2vw;
+    box-sizing: border-box;
+}
+
+.left-column, .right-column {
+   
+}
+
+.left-column {
+    flex-basis: 60%;
+}
+
+.right-column {
+    flex-basis: 40%;
+}
+
+.column-header {
+    
+}
+
+.profile-box {
+    display: flex;
+}
+
+.profile-box ul {
+    margin: 1em 0 0 1em;
+}
+
+.profile-photo {
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    /* position: relative;
+    left: 100%;
+    margin-left: -100px; */
+}
+
+.profile-photo img {
+    width: 120px;
+    margin: -7px;
+}
+
+.list-item {
+    position: relative;
+    top: -0.6em;
+    left: 0.75vw;
+    vertical-align: sub;
+}
+
+a, a:visited, a:active, a:hover {
+    color: inherit;
+}
+
+.column-header h3 {
+    /* font-size: x-large; */
+    font-size: 1.1em;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2vw;
+}
+
+.skill-item {
+    width: 20%;
+    height: 0;
+    padding-bottom: 20%;
+    text-align: center;
+    position: relative;
+}
+
+.skill-item img {
+    width: 40%;
+}
+
+.skill-item small {
+   display: block;
+}
+
+
+.timeline {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.timeline .year {
+    width: 10%;
+    padding: 2vw 2vw 2vw 0;
+}
+
+.timeline .year .duration {
+    display: block;
+    font-size: 0.8em;
+    color: gray;
+}
+
+.timeline .description {
+    width: 90%;
+    padding: 2vw 0 2vw 2vw;
+}
+
+.timeline .year, 
+.timeline .description {
+    
+    box-sizing: border-box;
+}
+
+.timeline:first-child .year,
+.timeline:first-child .description {
+    padding-top: 0;
+}
+
+.year .year-span {
+    list-style: disc;
+    list-style-position: inside;
+    margin-top: 15px;
+}
+
+.year ul, .year ul li:first-child {
+    height: 100%;
+}
+
+
+.year-span li {
+    position:relative;
+}
+
+.year-span li::marker {
+    position: relative;
+    z-index: 10;
+}
+
+.year-span li:first-child:after {
+    display: block;
+    position:absolute;
+    content: ' ';
+    border-left: 2px solid #4a555f;
+    position: absolute;
+    height: 100%;
+    margin: -8px 0 0 1px;
+    z-index: 1;
+}
+
+.year-span li span {
+    position: absolute;
+    left: -50%;
+    
+}
+
+.year-span li:first-child span {
+    top: -15px;
+}
+
+.year-span li:last-child span {
+    top: 15px;
+}
+
+/* TODO: not worth doing now */
+/* .timeline:not(:last-child) .year {
+    border-right: 1px solid #eee;
+} */
+
+.all-front-project {
+    padding: 1em;
+}
+
+
+.print {
+    display: none;
+}
+
+.sticky {
+    position: sticky;
+    top: 172px; /* TODO: not flexible enough */
+}
+
+
+@media screen {
+
+    body {
+        font-size: 1.25em;
+        line-height: 1.25em;
+    }
+
+    header {
+        position: sticky;
+        top: 0;
+        background-color: #FFF;
+        z-index: 1000;
+    }
+
+    .paper {
+        font-size: 1em;
+        max-width: 1240px;
+        margin: 0 auto;
+    }
+
+    .print {
+        display: inline-block;
+        position: fixed;
+        right: 2%;
+        bottom: 2%;
+        border: transparent;
+        padding: 1em 1.5em;
+        background-color: #3f51b5;
+        border-radius: 40px;
+        color: #FFF;
+        font-size: 1em;
+        text-transform: uppercase;
+        box-shadow: 0 3px 10px 0px rgba(0,0,0,0.4);
+        cursor: pointer;
+    }
+
+    .year-span li:first-child:after {
+        /* height: 18px; */
+        margin: -8px 0 0 2px;
+    }
+}
