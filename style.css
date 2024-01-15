@@ -274,10 +274,6 @@ a, a:visited, a:active, a:hover {
     margin-top: 15px;
 }
 
-.year ul, .year ul li:first-child {
-    height: 100%;
-}
-
 
 .year-span li {
     position:relative;
@@ -290,11 +286,10 @@ a, a:visited, a:active, a:hover {
 
 .year-span li:first-child:after {
     display: block;
-    position:absolute;
     content: ' ';
     border-left: 2px solid #4a555f;
     position: absolute;
-    height: 100%;
+    height: 17px;
     margin: -8px 0 0 1px;
     z-index: 1;
 }
@@ -370,7 +365,7 @@ a, a:visited, a:active, a:hover {
     }
 
     .year-span li:first-child:after {
-        /* height: 18px; */
+        height: 18px;
         margin: -8px 0 0 2px;
     }
 }
